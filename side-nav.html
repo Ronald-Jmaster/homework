@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Side-nav</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        .sidebar {
+            width: 260PX;
+            background-color: #000614;
+            height: 100vh;
+            border: solid 1px #646F81;
+        }
+
+        ul.list {
+            padding: 0;
+        }
+
+        ul.list li a {
+            font-size: 18px;
+            color: #646F81;
+            text-decoration: none;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            margin:5px;
+        }
+
+        ul.list li a:hover {
+            color: #26C17F;
+        }
+
+        ul.list li {
+            border-top: dashed 1px #646F81;
+            border-bottom: dashed 1px #646F81;
+            width: 258px;
+            padding: 20px 0;
+        }
+        
+        .icon {
+            width: 20px;
+            height: 20px;
+            margin: 0px 10px -2px 20px;
+            vertical-align: center;
+            filter: invert(70%); 
+        }
+
+        .info {
+            padding-top: 30px;
+        }
+
+        .image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: solid 2px white;
+            content: url(pictures/avatar.jpg);
+            margin: auto;
+        }
+
+        .name {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            margin: 10px;
+            color: white;
+        }
+
+        .back-button {
+            position: fixed;
+            left: 10px;
+            bottom: 10px;
+        }
+
+        .back-button a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="info">
+                <div class="image"></div>
+                <p class="name"><b>John Doe</b></p>
+            </div>
+            <div class="menu">
+                <ul class="list">
+                    <li><a href="#about"><img src="pictures/about.png" class="icon">About me</a></li>
+                    <li><a href="#education"><img src="pictures/education.png" class="icon">Education</a></li>
+                    <li><a href="#experience"><img src="pictures/experience.png" class="icon">Experience</a></li>
+                    <li><a href="#skils"><img src="pictures/skils.png" class="icon">Skils</a></li>
+                    <li><a href="#portfolio"><img src="pictures/portfolio.png" class="icon">Portfolio</a></li>
+                    <li><a href="#contacts"><img src="pictures/contacts.png" class="icon">Contacts</a></li>
+                    <li><a href="#feedbacks"><img src="pictures/feedbacks.jpg" class="icon">Feedbacks</a></li>
+                </ul>
+            </div>
+            <p class="back-button">
+                <a href="front-page.html"><img src="pictures/back.png" class="icon">Go Back</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
